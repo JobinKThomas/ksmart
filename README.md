@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# Grave Site Management
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is to manage grave site.
 
 ## Available Scripts
 
