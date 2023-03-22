@@ -14,9 +14,9 @@ Graves Management is a web application built with React that helps users manage 
 
 ## Built with
 
-React - The web framework used
-Styled Components
-Bootstrap
+1. React - The web framework used
+2. Styled Components
+3. Bootstrap
 
 ## Available Scripts
 
