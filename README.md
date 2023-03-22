@@ -1,6 +1,16 @@
 # Grave Site Management
 
-This project is to manage grave site.
+Graves Management is a web application built with React that helps users manage graves in a cemetry.
+
+## Installing 
+
+1. Clone the Project
+2. npm install
+
+## Running the Application
+
+1. npm start
+2. Open the applicaton in a web browser http://localhost:3000/
 
 ## Available Scripts
 
