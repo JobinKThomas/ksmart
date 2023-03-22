@@ -7,32 +7,32 @@ import { faListAlt, faBath } from "@fortawesome/free-solid-svg-icons";
 const data = [
   {
     id: 1,
-    title: "Grave Site Report",
+    title: "Grave Sites",
     icon: faListAlt,
   },
   {
     id: 2,
-    title: "Grave Site Report",
+    title: "Payment History",
     icon: faBath,
   },
   {
     id: 3,
-    title: "Grave Site Report",
+    title: "Payment Types",
     icon: faListAlt,
   },
   {
     id: 4,
-    title: "Grave Site Report",
+    title: "Burial Types",
     icon: faBath,
   },
   {
     id: 5,
-    title: "Grave Site Report",
+    title: "Funeral Homes",
     icon: faListAlt,
   },
   {
     id: 6,
-    title: "Grave Site Report",
+    title: "Section Codes",
     icon: faBath,
   },
 ];
@@ -42,11 +42,11 @@ function Newreport() {
       <h2>Generate New Report</h2>
       <Newcard>
         {data.map((item, index) => (
-          <Card  className="card">
-            <Card.Body>
-              <FontAwesomeIcon icon={item.icon} />
-              <Card.Title>{item.title}</Card.Title>
-              <Button variant="success">Select</Button>
+          <Card className="card">
+            <Card.Body className="card__body">
+              <FontAwesomeIcon icon={item.icon} className="card__icon" />
+              <Title>{item.title}</Title>
+              <Button className="card__button">Select</Button>
             </Card.Body>
           </Card>
         ))}
@@ -60,32 +60,57 @@ export default Newreport;
 const Newcard = styled.div`
   display: flex;
   background-color: #fff;
-  .card{
+  .card {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 18rem;
+    border: none !important;
+    height: 150px;
+    // border-right: 1px solid #ccc !important;
   }
+  .card__button {
+    background-color: #03ac13;
+    border: none;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 10px 20px;
+    margin-top: 15px;
+    border-radius: 25px;
+    width: 100%;
+    min-width: 100px;
+  }
+  .card__icon {
+    text-align: center;
+    width: 100%;
+  }
+//   .card__body {
+//     border-right: 1px solid #ccc !important;
+//   }
   @media only screen and (max-width: 767px) {
     display: block;
     text-align: center;
-    .card{
-        margin: 0 auto;
-        width: 100%;
+    .card {
+      margin: 0 auto;
+      width: 100%;
     }
   }
-
+`;
+const Title = styled.h3`
+  font-size: 14px;
+  margin-top: 10px;
 `;
 const Report = styled.div`
-margin: 30px 0;
-    h2 {
-        font-size: 24px;
-        font-weight: 700;
-        color: #227847;
-        margin-bottom: 30px;
-    }
-    // @media only screen and (max-width: 767px) {
-    //     text-align: center;
-    // }
+  margin: 30px 0;
+  h2 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #227847;
+    margin-bottom: 30px;
+  }
+  // @media only screen and (max-width: 767px) {
+  //     text-align: center;
+  // }
 `;

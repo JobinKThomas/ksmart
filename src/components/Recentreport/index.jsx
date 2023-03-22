@@ -3,54 +3,51 @@ import styled from "styled-components";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faListAlt, faBath } from "@fortawesome/free-solid-svg-icons";
 
-const data = [
-  {
-    id: 1,
-    title: "Grave Site Report",
-    owner: "Mrs.Jack",
-    date: "All",
-    icon: faListAlt,
-  },
-  {
-    id: 2,
-    title: "Grave Site Report",
-    owner: "Mrs.Jack",
-    date: "All",
-    icon: faListAlt,
-  },
-  {
-    id: 3,
-    title: "Grave Site Report",
-    owner: "Mrs.Jack",
-    date: "All",
-    icon: faListAlt,
-  },
-  {
-    id: 4,
-    title: "Grave Site Report",
-    owner: "Mrs.Jack",
-    date: "All",
-    icon: faListAlt,
-  },
-];
 
 function RecentgenerateReport() {
   return (
     <Report>
       <h2 className="card__header">Recently Generated</h2>
       <RecentReport>
-        {data.map((item, index) => (
-          <Card className="card">
+        <Card className="card">
             <Card.Body>
-              <FontAwesomeIcon icon={item.icon} />
-              <Card.Title>{item.title}</Card.Title>
+              <FontAwesomeIcon icon={faListAlt} />
+              <Card.Title>Grave Site Report</Card.Title>
               <Card.Subtitle className="mb-2 text-muted">
-                Ownner {item.owner}
+                Ownner : Mrs.Jack Kramer
               </Card.Subtitle>
-              <Card.Text>Date : {item.date}</Card.Text>
+              <Card.Text>Date : All</Card.Text>
             </Card.Body>
           </Card>
-        ))}
+          <Card className="card">
+            <Card.Body>
+              <FontAwesomeIcon icon={faListAlt} />
+              <Card.Title>Payment History Report</Card.Title>
+              <Card.Subtitle className="mb-2 text-muted">
+                Posting : 10/10/2022 - 12/31/2022
+              </Card.Subtitle>
+              <Card.Text>Payment Type : All</Card.Text>
+            </Card.Body>
+          </Card>
+          <Card className="card">
+            <Card.Body>
+              <FontAwesomeIcon icon={faListAlt} />
+              <Card.Title>Grave Site 01-1001-01.0</Card.Title>
+              <Card.Subtitle className="mb-2 text-muted">
+                Building Person : All
+              </Card.Subtitle>
+              <Card.Text>Date : 10/10/2022 - 12/31/2022</Card.Text>
+            </Card.Body>
+          </Card>
+          <Card className="card">
+            <Card.Body>
+              <FontAwesomeIcon icon={faListAlt} />
+              <Card.Title>Burial Types</Card.Title>
+              <Card.Subtitle className="mb-2 text-muted">
+                All BurialTyeps
+              </Card.Subtitle>
+            </Card.Body>
+          </Card>
       </RecentReport>
     </Report>
   );

@@ -6,6 +6,9 @@ import {
   faGear,
   faCircleQuestion,
   faChevronDown,
+  faThLarge,
+  faUsd,
+  faFile,
 } from "@fortawesome/free-solid-svg-icons";
 
 const Header = () => {
@@ -14,11 +17,14 @@ const Header = () => {
     <StyledHeader>
       <Logo>Grave Sites Management</Logo>
       <div className="header__center">
+      <FontAwesomeIcon icon={faThLarge} />
         <Select>
           <option className="option">Maintain</option>
           <option className="option">Maintain2</option>
         </Select>
+      <FontAwesomeIcon icon={faUsd} />
         <Link>Payments</Link>
+        <FontAwesomeIcon icon={faFile} />
         <Link>Reports</Link>
       </div>
       <div className="headerbuttons">
