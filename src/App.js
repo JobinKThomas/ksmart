@@ -1,25 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import Header from "./components/Header";
+import Report from "./pages";
+import styled from "styled-components";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Appdata>
+      <Header />
+      <Report />
+    </Appdata>
   );
 }
 
 export default App;
+
+const Appdata = styled.div`
+  background-color: #e1e6e3;
+  height: 100vh;
+  @media only screen and (max-width: 767px) {
+    height: 100%;
+  }
+`;
